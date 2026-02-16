@@ -1,0 +1,423 @@
+{
+  "info": {
+    "_postman_id": "1e0b9290-1417-4577-8d57-5e67809cdbc1",
+    "name": "Gestor de opiniones",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48145758",
+    "_collection_link": "https://go.postman.co/collection/48145758-1e0b9290-1417-4577-8d57-5e67809cdbc1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Usuarios",
+      "item": [
+        {
+          "name": "agregar usuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"contrasena\": \"123456\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar usuarios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "buscar usuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios/699352f8a314482b0f2dde3c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios",
+                "699352f8a314482b0f2dde3c"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "editar usuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Alesandro\",\r\n  \"apellido\": \"Felipe\",\r\n  \"correo\": \"alesandro.felipe@example.com\",\r\n  \"contrasena\": \"879658\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios/699352f8a314482b0f2dde3c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios",
+                "699352f8a314482b0f2dde3c"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "desactivar usuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios/699352f8a314482b0f2dde3c/desactivar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios",
+                "699352f8a314482b0f2dde3c",
+                "desactivar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "activar usuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/usuarios/699352f8a314482b0f2dde3c/activar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "usuarios",
+                "699352f8a314482b0f2dde3c",
+                "activar"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Publicaciones",
+      "item": [
+        {
+          "name": "agregar publicacion",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Mi primera publicación\",\r\n  \"descripcion\": \"Esta es una publicación de prueba\",\r\n  \"usuario\": \"699352f8a314482b0f2dde3c\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar publicacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "editar publicacion",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Gane mi rpimera partida de fornite\",\r\n  \"descripcion\": \"lo gane porque se calleron los servidores\",\r\n  \"usuario\": \"699352f8a314482b0f2dde3c\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones/699353daa314482b0f2dde46",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones",
+                "699353daa314482b0f2dde46"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "desactivar publicacion",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones/699353daa314482b0f2dde46/desactivar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones",
+                "699353daa314482b0f2dde46",
+                "desactivar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "activar publicacion",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones/699353daa314482b0f2dde46/activar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones",
+                "699353daa314482b0f2dde46",
+                "activar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar publicacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/publicaciones/699352f8a314482b0f2dde3c",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "publicaciones",
+                "699352f8a314482b0f2dde3c"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Comentarios",
+      "item": [
+        {
+          "name": "crear comentario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"descripcion\": \"Estoy jugando fornite\",\r\n  \"publicacion\": \"699352f8a314482b0f2dde3c\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/comentarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "comentarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar comentario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/comentarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "comentarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Desactivar coementario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/comentarios/699352f8a314482b0f2dde3c/desactivar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "comentarios",
+                "699352f8a314482b0f2dde3c",
+                "desactivar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "activar comentario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/gestor-de-opiniones/v1/comentarios/699352f8a314482b0f2dde3c/activar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "gestor-de-opiniones",
+                "v1",
+                "comentarios",
+                "699352f8a314482b0f2dde3c",
+                "activar"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
