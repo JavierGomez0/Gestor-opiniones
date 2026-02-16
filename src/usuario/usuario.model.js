@@ -26,7 +26,7 @@ const usuariosSchema = new mongoose.Schema({
         type: String,
         required: [true, 'La contraseña es obligatoria'],
         required: true,
-        minlength: [100, 'La contraseña debe tener al menos 100 caracteres'],
+        minlength: [6, 'La contraseña debe tener al menos 6 caracteres'],
     },
     isActive: {
         type: Boolean,
