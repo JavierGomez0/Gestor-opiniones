@@ -54,9 +54,7 @@ Crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
 
 ```env
 PORT=3001
-NODE_ENV=development
 URI_MONGODB=mongodb://localhost:27017/gestor-opiniones
-JWT_SECRET=miClaveSuperSecreta123
 ```
 
 **Variables explicadas:**
