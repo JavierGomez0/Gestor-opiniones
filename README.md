@@ -165,13 +165,3 @@ GET    /gestor-de-opiniones/v1/comentarios
 ---
 
 
-## 🔐 Administrador por defecto
-
-Para acceder como administrador, utiliza las siguientes credenciales:
-
-```json
-{
-  "email": "admin@gestor.com",
-  "password": "admin123"
-}
-```
