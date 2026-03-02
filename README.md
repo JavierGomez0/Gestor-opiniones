@@ -54,6 +54,7 @@ Crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
 
 ```env
 PORT=3001
+NODE_ENV=development
 URI_MONGODB=mongodb://localhost:27017/gestor-opiniones
 ```
 
@@ -61,7 +62,6 @@ URI_MONGODB=mongodb://localhost:27017/gestor-opiniones
 - `PORT`: Puerto en el que se ejecutará el servidor (por defecto 3001)
 - `NODE_ENV`: Ambiente de ejecución (development, production)
 - `URI_MONGODB`: URL de conexión a MongoDB
-- `JWT_SECRET`: Clave secreta para generar tokens JWT
 
 ---
 
